@@ -1,16 +1,12 @@
 package Jisuanqi;
 
-import javax.print.attribute.standard.PrinterMakeAndModel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.Field;
 
 public class myself extends JFrame{
     private String[] nums = new String[]{"C","1","2","3","+","4","5","6","-","7","8","9","*",".","0","=","/"};
@@ -79,7 +75,7 @@ public class myself extends JFrame{
         }
     }
     
-    //符号的运行代码
+    //符号计算的运行代码
     public void print(double n){   
         switch(operator){
             case "+":
@@ -101,6 +97,7 @@ public class myself extends JFrame{
                 result = 0;
                 break;
         }
+        //输出计算后的结果
         field.setText("" + result);
     }
 
