@@ -49,7 +49,7 @@ public class myself extends JFrame{
                     field.setText(field.getText() + input);
                 }
                 start = false;
-            }else{ //如果是运算符，进行计算并更新显示框和运算符
+            }else{ //如果没有运算符，就进行计算并更新显示框和运算符
                 if(start){
                     if(input.equals(null)){
                         field.setText(input);
