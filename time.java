@@ -11,13 +11,13 @@ import java.awt.event.ActionListener;
 import java.util.Date;
 
 
-public class MyFrame extends JFrame {
+public class time extends JFrame {
 
 
     JLabel j1 = new JLabel("点击有惊喜哦");
     // JLabel j1 = new JLabel();
 
-    public MyFrame(String title){
+    public time(String title){
         super(title);
 
         this.setLocation(700,300);	
@@ -61,6 +61,6 @@ public class MyFrame extends JFrame {
 
 
     public static void main(String[] args) {
-        JFrame t = new MyFrame("");
+        new time("");
     }
 }
